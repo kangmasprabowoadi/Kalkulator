@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Scientific - Adi</title>
+<link rel="stylesheet" href="csscalculator.css">
+<script defer src="calculator.js"></script>
+</head>
+<body>
+<div class="calc-wrap">
+    <div class="display">
+        <div class="screen">
+            <div id="expr" class="expr">0</div>
+            <div id="result" class="result">0</div>
+        </div>
+    </div>
+
+    <div class="keys">
+        <!-- Fungsi dasar -->
+        <button class="key func" data-action="clear">C</button>
+        <button class="key func" data-action="back">⌫</button>
+        <button class="key func" data-value="(">(</button>
+        <button class="key func" data-value=")">)</button>
+
+        <!-- Trigonometri & log -->
+        <button class="key func" data-func="sin">sin</button>
+        <button class="key func" data-func="cos">cos</button>
+        <button class="key func" data-func="tan">tan</button>
+        <button class="key func" data-func="log">log</button>
+
+        <!-- Angka -->
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key op" data-value="/">÷</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key op" data-value="*">×</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key op" data-value="-">−</button>
+
+        <button class="key" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key func" data-action="percent">%</button>
+        <button class="key op" data-value="+">+</button>
+
+        <!-- Scientific tambahan -->
+        <button class="key func" data-func="sqrt">√</button>
+        <button class="key func" data-func="pow">x^y</button>
+        <button class="key func" data-func="pi">π</button>
+        <button class="key func" data-func="e">e</button>
+        <button class="key func" data-func="fact">n!</button>
+
+        <!-- Memory -->
+        <button class="key func" data-func="Mplus">M+</button>
+        <button class="key func" data-func="Mminus">M-</button>
+        <button class="key func" data-func="MR">MR</button>
+        <button class="key func" data-func="MC">MC</button>
+
+        <!-- Dark mode toggle -->
+        <button class="key func" data-func="dark">🌙</button>
+
+        <!-- Hasil -->
+        <button class="key wide op" data-action="equals">=</button>
+    </div>
+</div>
+</body>
+</html>
