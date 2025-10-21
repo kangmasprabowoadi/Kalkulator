@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PomodoroPlus - Adi</title>
+<link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+<div class="container">
+    <h1>PomodoroPlus</h1>
+    <div class="timer-display">
+        <span id="mode-label">Work</span>
+        <div id="time">25:00</div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div class="settings">
+        <label>Work: <input type="number" id="work-duration" value="25" min="1"> min</label>
+        <label>Break: <input type="number" id="break-duration" value="5" min="1"> min</label>
+        <button id="switch">Switch Mode</button>
+        <button id="dark-toggle">Dark Mode</button>
+    </div>
+    <audio id="alarm-sound" src="https://www.soundjay.com/button/beep-07.mp3"></audio>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
